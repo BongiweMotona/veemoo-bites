@@ -52,6 +52,24 @@ Screenshots demonstrating the website's responsive layout across screen sizes ar
 - `tablet-view.png` - Tablet layout (768px breakpoint)
 - `mobile-view.png` - Mobile layout (480px breakpoint)
 
+<img width="859" height="762" alt="0924f54a-56f1-42fe-95ad-b9659de84ee3" src="https://github.com/user-attachments/assets/82be4d74-8fd2-4ac3-8206-0fa11b11b366" />
+
+<img width="862" height="769" alt="fbee1567-5f26-4473-aa87-57e71689aa0d" src="https://github.com/user-attachments/assets/c51f3d80-ee1c-41bd-976e-55bd332d8461" />
+
+<img width="858" height="771" alt="69ad840a-8d22-4a8a-8882-0891b16f3165" src="https://github.com/user-attachments/assets/f73bbc02-3959-4853-b1c9-b607e1d3bcbc" />
+
+<img width="861" height="769" alt="72af83e2-e3a7-4621-926c-99da528daed3" src="https://github.com/user-attachments/assets/00d32403-9b71-4e85-8729-d7079f7ce983" />
+
+<img width="862" height="766" alt="ac2d671b-b4da-4295-b4ef-a0f51c3e13b3" src="https://github.com/user-attachments/assets/60da1946-ddbd-4dc5-860e-577c2ea6daca" />
+
+
+<img width="478" height="760" alt="11dc3a9c-b2d2-424d-afa1-6a9d7ed20035" src="https://github.com/user-attachments/assets/98905f3c-db7a-4ba2-b4c6-8ced474f7fee" />
+
+<img width="477" height="777" alt="50fdc1ff-aa4c-4fd5-8822-e1b43612249e" src="https://github.com/user-attachments/assets/75f5cfa3-8e4b-4c6d-91fa-673ff6abcc11" />
+
+<img width="607" height="799" alt="63a1e893-252f-47b1-b20b-cf812e10a855" src="https://github.com/user-attachments/assets/53b150e0-ae9b-4483-8409-17d62ef8aa83" />
+
+
 ## Part 1 Details
 Basic HTML structure completed for all 5 pages, with header, nav, main, and footer sections. Research and content sourced from client-provided hamper flyers and business information.
 
