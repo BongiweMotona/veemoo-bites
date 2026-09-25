@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeeMoo Bites | Order / Enquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <img src="images/hampers/logo.png.jpg" alt="VeeMoo Bites Logo" style="max-width: 150px; height: auto;">
+        <h1>VeeMoo Bites</h1>
+        <p>Order Your Hamper</p>
+    </header>
+
+    <!-- Website Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Products</a>
+        <a href="Enquiry.html">Order</a>
+        <a href="Contact Us.html">Contact</a>
+    </nav>
+
+    <!-- Main Page Content -->
+    <main>
+
+        <section>
+            <h2>Place Your Order</h2>
+            <p>
+                Fill in the form below and we'll confirm your order
+                directly. Delivery is free within Bloemfontein.
+            </p>
+
+            <form>
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname">
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="hampertype">Hamper Type:</label><br>
+                    <select id="hampertype" name="hampertype">
+                        <option value="biltong">Biltong Pack</option>
+                        <option value="student">Student Value Hamper</option>
+                        <option value="budget2">Budget For 2 Hamper</option>
+                        <option value="pork">Pork Hamper</option>
+                        <option value="halfmonth">Half Month Hamper</option>
+                        <option value="valuepack">Value Pack Hamper</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1">
+                </p>
+
+                <p>
+                    <label for="address">Delivery Address (Bloemfontein only):</label><br>
+                    <textarea id="address" name="address"></textarea>
+                </p>
+
+                <p>
+                    <label for="deliverydate">Preferred Delivery Date:</label><br>
+                    <input type="date" id="deliverydate" name="deliverydate">
+                </p>
+
+                <p>
+                    <label for="notes">Additional Notes:</label><br>
+                    <textarea id="notes" name="notes"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Enquiry</button>
+                </p>
+            </form>
+
+            <p>We'll confirm your order via email or phone within 24 hours.</p>
+        </section>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+        <p>Contact us: 072 458 4640 | info@veemoobites.co.za</p>
+        <p>Follow us on Facebook (VeeMoo Bites) and Instagram (@veemoo_bites)</p>
+        <p>&copy; 2026 VeeMoo Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
