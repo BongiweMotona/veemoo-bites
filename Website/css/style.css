@@ -217,3 +217,117 @@ main img {
         flex: 1 1 100%;
     }
 }
+/* ===== Enquiry Form ===== */
+.form-group {
+    margin-bottom: 1.25rem;
+    border: none;
+}
+
+.form-group label,
+.form-group legend {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FF6600;
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.2);
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.radio-row label {
+    font-weight: 400;
+}
+
+.input-invalid {
+    border-color: #cc0000 !important;
+}
+
+.error-message {
+    display: block;
+    color: #cc0000;
+    font-size: 0.875rem;
+    margin-top: 0.3rem;
+}
+
+.form-button {
+    background-color: #FF6600;
+    color: #000000;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: #000000;
+    color: #FF6600;
+}
+
+.enquiry-response {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 5px solid #FF6600;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+/* ===== Contact Form extras ===== */
+.char-count {
+    display: block;
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 0.3rem;
+}
+
+.form-button-secondary {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #FF6600;
+}
+
+.preview-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.preview-actions .form-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.enquiry-response pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: inherit;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.75rem 0;
+}

@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VeeMoo Bites | Order / Enquiry</title>
+
+    <!-- SEO tags -->
+    <title>Order a Meat Hamper | VeeMoo Bites Bloemfontein</title>
+    <meta name="description" content="Place a hamper or biltong order with VeeMoo Bites. Choose your hamper, enter your Bloemfontein delivery details and we will confirm your order.">
+    <meta name="keywords" content="order meat hamper, hamper enquiry, biltong order, meat delivery Bloemfontein">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Website Header -->
     <header>
-        <img src="images/hampers/logo.png.jpg" alt="VeeMoo Bites Logo" style="max-width: 150px; height: auto;">
+        <img src="images/hampers/logo.png.jpg" alt="VeeMoo Bites Logo">
         <h1>VeeMoo Bites</h1>
         <p>Order Your Hamper</p>
     </header>
@@ -22,7 +27,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
-        <a href="Services.html">Products</a>
+        <a href="Services.html">Hampers</a>
         <a href="Enquiry.html">Order</a>
         <a href="Contact Us.html">Contact</a>
     </nav>
@@ -33,64 +38,90 @@
         <section>
             <h2>Place Your Order</h2>
             <p>
-                Fill in the form below and we'll confirm your order
-                directly. Delivery is free within Bloemfontein.
+                Fill in the form below to get your total and a delivery
+                confirmation. Delivery is free within Bloemfontein only.
+                Fields marked * are required.
             </p>
 
-            <form>
-                <p>
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname">
-                </p>
+            <form id="enquiryForm" action="Enquiry.html" method="get" novalidate>
 
-                <p>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" id="phone" name="phone">
-                </p>
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" autocomplete="name">
+                    <span class="error-message" id="fullnameError"></span>
+                </div>
 
-                <p>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email">
-                </p>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="072 458 4640" autocomplete="tel">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
 
-                <p>
-                    <label for="hampertype">Hamper Type:</label><br>
-                    <select id="hampertype" name="hampertype">
-                        <option value="biltong">Biltong Pack</option>
-                        <option value="student">Student Value Hamper</option>
-                        <option value="budget2">Budget For 2 Hamper</option>
-                        <option value="pork">Pork Hamper</option>
-                        <option value="halfmonth">Half Month Hamper</option>
-                        <option value="valuepack">Value Pack Hamper</option>
+                <div class="form-group">
+                    <label for="email">Email Address (optional)</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Hamper or Biltong *</label>
+                    <select id="product" name="product">
+                        <option value="">-- Choose an option --</option>
+                        <optgroup label="Meat Hampers">
+                            <option value="student">Student Value Hamper - R375</option>
+                            <option value="budget2">Budget For 2 Hamper - R750</option>
+                            <option value="pork">Pork Hamper - R650</option>
+                            <option value="halfmonth">Half Month Hamper - R850</option>
+                            <option value="valuepack">Value Pack Hamper - R1000</option>
+                        </optgroup>
+                        <optgroup label="Biltong Packs">
+                            <option value="biltong1">Biltong Pack (Flavour 1) - R40</option>
+                            <option value="biltong2">Biltong Pack (Flavour 2) - R35</option>
+                        </optgroup>
                     </select>
-                </p>
+                    <span class="error-message" id="productError"></span>
+                </div>
 
-                <p>
-                    <label for="quantity">Quantity:</label><br>
-                    <input type="number" id="quantity" name="quantity" min="1">
-                </p>
+                <div class="form-group">
+                    <label for="quantity">Quantity *</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="20">
+                    <span class="error-message" id="quantityError"></span>
+                </div>
 
-                <p>
-                    <label for="address">Delivery Address (Bloemfontein only):</label><br>
-                    <textarea id="address" name="address"></textarea>
-                </p>
+                <fieldset class="form-group radio-row">
+                    <legend>How would you like to receive it? *</legend>
+                    <label>
+                        <input type="radio" id="methodDelivery" name="method" value="delivery" checked>
+                        Free delivery (Bloemfontein only)
+                    </label>
+                    <label>
+                        <input type="radio" id="methodCollection" name="method" value="collection">
+                        Collect at Waterfront Mall
+                    </label>
+                </fieldset>
 
-                <p>
-                    <label for="deliverydate">Preferred Delivery Date:</label><br>
+                <div class="form-group" id="addressGroup">
+                    <label for="address">Delivery Address (Bloemfontein) *</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                    <span class="error-message" id="addressError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="deliverydate">Preferred Delivery / Collection Date *</label>
                     <input type="date" id="deliverydate" name="deliverydate">
-                </p>
+                    <span class="error-message" id="deliverydateError"></span>
+                </div>
 
-                <p>
-                    <label for="notes">Additional Notes:</label><br>
-                    <textarea id="notes" name="notes"></textarea>
-                </p>
+                <div class="form-group">
+                    <label for="notes">Additional Notes (optional)</label>
+                    <textarea id="notes" name="notes" rows="3" maxlength="300"></textarea>
+                </div>
 
-                <p>
-                    <button type="submit">Submit Enquiry</button>
-                </p>
+                <button type="submit" class="form-button">Get My Total</button>
             </form>
 
-            <p>We'll confirm your order via email or phone within 24 hours.</p>
+            <!-- Filled in by js/enquiry.js after a valid submission -->
+            <div id="enquiryResponse" class="enquiry-response" aria-live="polite" hidden></div>
         </section>
 
     </main>
@@ -101,6 +132,8 @@
         <p>Follow us on Facebook (VeeMoo Bites) and Instagram (@veemoo_bites)</p>
         <p>&copy; 2026 VeeMoo Bites. All rights reserved.</p>
     </footer>
+
+    <script src="js/enquiry.js"></script>
 
 </body>
 

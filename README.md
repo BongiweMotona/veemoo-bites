@@ -70,6 +70,10 @@ Basic HTML structure completed for all 5 pages, with header, nav, main, and foot
 - **[25 September ]** - Applied base typography, colour scheme, and layout styling.
 - **[25 September ]** - Implemented responsive breakpoints for tablet and mobile.
 - **[25 September ]** - Added biltong product images and updated hamper card layout.
+- **02 Nov 2026** - Addressed Part 2 feedback on the GitHub folder structure. Part 2 files had been uploaded through the GitHub website, which placed the HTML files and research images loose at the top level of the repository instead of inside their folders. Changes made:
+  - Merged the browser-upload history with the local VS Code history and kept the local folder structure, so the repository now matches the local project exactly: `Chosen Proposal`, `Proposals`, `Research`, `screenshots`, `Website` (containing `css`, `images` and the five HTML pages) and `README.md`.
+  - Added the approved proposal document to the `Chosen Proposal` folder. The folder had not appeared on GitHub because it was empty.
+  - From this point, all changes are committed and pushed from VS Code using the Source Control panel, with descriptive commit messages.
 
 ## References
 - Google Fonts - Poppins. Available at: https://fonts.google.com/specimen/Poppins (Accessed: [25 September ]).
